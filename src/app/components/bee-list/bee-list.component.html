@@ -8,9 +8,15 @@
   </thead>
   <tbody>
     <tr *ngFor="let bee of bees">
-      <td>{{ bee.name }}</td>
+      <td>
+        <a (click)="showBee(bee)">{{ bee.name }}</a>
+      </td>
       <td>{{ bee.species }}</td>
       <td>{{ bee.deadly ? 'YES' : 'NO' }}</td>
     </tr>
   </tbody>
 </table>
+
+<app-bee-detail *ngIf="selectedBee"
+                [bee]="selectedBee">
+</app-bee-detail>

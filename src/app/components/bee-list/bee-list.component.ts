@@ -11,8 +11,13 @@ import { FAKE_DATA } from '../../models/fake-data';
 })
 export class BeeListComponent implements OnInit {
   public bees: Bee[];
+  public selectedBee: Bee;
 
   public ngOnInit(): void {
     this.bees = FAKE_DATA;
+  }
+
+  public showBee(bee: Bee): void {
+    this.selectedBee = bee;
   }
 }

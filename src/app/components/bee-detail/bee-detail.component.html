@@ -1,0 +1,16 @@
+<div class="bee-detail">
+  <div class="bee-detail-image">
+    <img class="bee-detail-image-content" [src]="bee.image_url">
+  </div>
+  <div class="bee-detail-text">
+    <h1 class="bee-detail-name">{{ bee.name }}</h1>
+    <h2 class="bee-detail-science">{{ bee.genus }} {{ bee.species }}</h2>
+    <h3 class="bee-detail-alias">{{ bee.alias }}</h3>
+    <div class="bee-detail-descriptors">
+      <span *ngIf="bee.deadly" class="tic-tac bee-detail-deadly">Deadly</span>
+      <span *ngIf="bee.communal" class="tic-tac bee-detail-communal">Communal</span>
+      <span *ngIf="bee.endangered" class="tic-tac bee-detail-endangered">Endangered</span>
+    </div>
+    <div class="bee-detail-description">{{ bee.description }}</div>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+.bee-detail {
+  display: flex;
+}
+
+.bee-detail-image {
+  flex: 0 0 200px;
+}
+
+.bee-detail-image-content {
+  height: auto;
+  width: 100%;
+}
+
+.bee-detail-text {
+  flex: 1 0 0px;
+  padding-left: 2em;
+}
+
+.bee-detail-name {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.bee-detail-science {
+  font-style: italic;
+}
+
+.tic-tac {
+  border-radius: 2px;
+  display: inline-block;
+  padding: .5em 1em;
+  margin: 0 .5em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.bee-detail-deadly {
+  background-color: red;
+  color: white;
+}
+
+.bee-detail-endangered {
+  background-color: orange;
+  color: black;
+}
+
+.bee-detail-communal {
+  background-color: cyan;
+  color: black;
+}
+
+.bee-detail-description {
+  border-top: 1px solid #333;
+  margin-top: 1em;
+  padding-top: 1em;
+}

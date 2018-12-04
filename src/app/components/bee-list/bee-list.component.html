@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Species</th>
+      <th>Is deadly?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let bee of bees">
+      <td>{{ bee.name }}</td>
+      <td>{{ bee.species }}</td>
+      <td>{{ bee.deadly ? 'YES' : 'NO' }}</td>
+    </tr>
+  </tbody>
+</table>

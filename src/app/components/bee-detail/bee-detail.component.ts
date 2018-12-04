@@ -17,11 +17,11 @@ export class BeeDetailComponent implements OnInit {
       description: 'Ew. Gross.',
       genus: 'Perspirus',
       species: 'Smellius',
-      deadly: false,
+      deadly: true,
       alias: 'The Stinky Green Machine',
       communal: true,
       image_url: 'https://upload.wikimedia.org/wikipedia/commons/b/b5/Iridescent.green.sweat.bee1.jpg',
-      endangered: false,
+      endangered: true,
       id: '1'
     };
   }
